@@ -648,5 +648,7 @@ window.gest = (function (window) {
 		}
 	};
 
+	module.exports = gest;
+
 	return new gest();
 }(window));
