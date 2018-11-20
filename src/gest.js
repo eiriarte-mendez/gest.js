@@ -55,7 +55,7 @@ window.gest = (function (window) {
 		stream,
 
 		//declare DOM elements
-		video, canvas, context,
+		video, canvas, context, gestContainer,
 
 		/* @constructor */
 		gest = function () {
@@ -81,6 +81,10 @@ window.gest = (function (window) {
 			function _DOMready() {
 				utils.removeEventListener('DOMContentLoaded', document, _DOMready);
 				utils.removeEventListener('load', window, _DOMready);
+
+				gestContainer = document.createElement('aside');
+				gestContainer.id = 'hidden-gest';
+				document.body.appendChild(gestContainer);
 
 				//we need to call and wait for init to finish before we know that we are actually ready
 				if (init()) { gestIsInitialised = true; }
@@ -123,12 +127,14 @@ window.gest = (function (window) {
 				//setup DOM elements
 
 				video.width = 480;
-				video.height = 320;
+				video.height = 300;
 				video.setAttribute('style', 'visibility: hidden;');
-				document.body.appendChild(video);
+				// document.body.appendChild(video);
+				gestContainer.appendChild(video);
 
 				canvas.setAttribute('style', 'width: 480px; display: none;');
-				document.body.appendChild(canvas);
+				// document.body.appendChild(canvas);
+				gestContainer.appendChild(canvas);
 				context = canvas.getContext('2d');
 			} else {
 				throwError(0);
