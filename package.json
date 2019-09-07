@@ -2,7 +2,7 @@
   "author": "Hadi Michael",
   "name": "gest",
   "description": "gest.js is a webcam based gesture recognition library that helps developers make webpages more immersive",
-  "version": "0.5.0",
+  "version": "0.5.4",
   "main": "src/gest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
