@@ -1,6 +1,6 @@
 {
   "author": "Hadi Michael",
-  "name": "gest",
+  "name": "@eiriarte-mendez-rp/gest",
   "description": "gest.js is a webcam based gesture recognition library that helps developers make webpages more immersive",
   "version": "0.5.4",
   "main": "src/gest.js",
@@ -11,5 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/eiriarte-mendez/gest.js.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eiriarte-mendez/gest.js/issues"
+  },
+  "homepage": "https://github.com/eiriarte-mendez/gest.js#readme",
+  "keywords": [
+    "js",
+    "gesture-detection"
+  ]
 }
